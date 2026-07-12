@@ -1,6 +1,12 @@
 console.log("welcome to wakeUpIndia");
 
-function goToYear() {
-    const year = document.getElementById("year").value;
-    window.location.href = "Kalahandi/" + year + ".html";
-}
+document.getElementById("yearselect")
+.addEventListener("change", function ()
+                  {
+                      const year = this.value;
+
+                  if (year === "2026") {
+                      window.location.href =
+                          "kalahandi/2026.html";
+                  }
+                  });
